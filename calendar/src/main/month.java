@@ -13,6 +13,15 @@ public class month {
 		String dates = format1.format(todays);
 		String times = format2.format(todays);
 		
-		System.out.println(dates +"\\"+ times);
+		System.out.println(dates +" "+ times);
+		
+		String year = dates.substring(0,4);
+		String month = dates.substring(5,7);
+		String day = dates.substring(8);
+		
+		System.out.println(year+"³â "+month+"¿ù "+day+"ÀÏ");
+		
 	}
+	 
+	
 }
